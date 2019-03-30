@@ -138,10 +138,6 @@ public abstract class ViewController<T extends ViewGroup> implements ViewTreeObs
         
     }
 
-    public void applyBottomPadding(int padding) {
-
-    }
-
     public Activity getActivity() {
         return activity;
     }
