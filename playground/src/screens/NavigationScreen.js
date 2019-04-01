@@ -49,7 +49,7 @@ class NavigationScreen extends React.Component {
   showOverlay = () => Navigation.showModal(Screens.Overlay);
   externalComponent = () => Navigation.showModal(Screens.ExternalComponent);
   pushStaticEventsScreen = () => Navigation.showModal(Screens.EventsScreen)
-  orientation = () => Navigation.showModal(Screens.Orientation);
+  orientation = () => Navigation.push(this, Screens.Orientation);
   preview = ({ reactTag }) => {
     Navigation.push(this.props.componentId, {
       component: {
